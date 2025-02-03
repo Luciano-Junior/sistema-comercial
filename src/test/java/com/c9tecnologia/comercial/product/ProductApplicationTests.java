@@ -1,4 +1,4 @@
-package com.c9tecnologia.product;
+package com.c9tecnologia.comercial.product;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
