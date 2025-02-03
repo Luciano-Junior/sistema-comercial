@@ -7,7 +7,6 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Data
 public class ClienteInputDTO {
@@ -22,24 +21,23 @@ public class ClienteInputDTO {
     private String cnpjcpf;
 
     private String rg;
-    private String razaoSocial;
-    private LocalDate dataNascimento;
+    private String razao_social;
+    private LocalDate data_nascimento;
 
     @NotBlank(message = "O nome fantasia é obrigatório")
     @Size(min = 3, max = 100, message = "O nome deve ter entre 3 e 100 caracteres")
     @NotBlank(message = "O nome fantasia é obrigatório")
     @Size(min = 3, max = 100, message = "O nome deve ter entre 3 e 100 caracteres")
-    private String nomeFantasia;
+    private String nome_fantasia;
 
     private String sexo;
-    private String estadoCivil;
+    private String estad_civil;
     private String cep;
     private String endereco;
     private String numero;
     private String complemento;
     private String bairro;
     private String cidade;
-    private String ibge;
     private String estado;
     private String celular;
 
@@ -48,23 +46,8 @@ public class ClienteInputDTO {
     private String email;
 
     private String obs;
-    private String tipoCadastro;
-    private String profissao;
+    private String tipo_cadastro;
     private String categoria;
-    private String listaPreco;
-    private String condicaoPagamento;
-    private String contaBancaria;
-    private Double limiteCredito;
-    private Boolean limiteUltrapassar;
-    private LocalDate dataInicial;
-    private LocalDate dataFinal;
-    private LocalDate dataCadastro;
-    private LocalTime horaCadastro;
-    private String horario;
-    @Size(max = 3)
-    private String deveReceberSms;
-    @Size(max = 3)
-    private String deveReceberTorpedoVoz;
-    private String criadoPor;
-    private String atualizadoPor;
+    private Integer criado_por;
+    private Integer atualizado_por;
 }
