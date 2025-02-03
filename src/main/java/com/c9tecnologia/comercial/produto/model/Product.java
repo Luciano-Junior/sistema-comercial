@@ -1,4 +1,4 @@
-package com.c9tecnologia.product.model;
+package com.c9tecnologia.comercial.produto.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

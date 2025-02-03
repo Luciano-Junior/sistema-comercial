@@ -1,4 +1,4 @@
-package com.c9tecnologia.product.config;
+package com.c9tecnologia.comercial.produto.config;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
-package com.c9tecnologia.product.controller;
+package com.c9tecnologia.comercial.produto.controller;
 
-import com.c9tecnologia.product.dto.ProductOutputDTO;
-import com.c9tecnologia.product.service.ProductService;
+import com.c9tecnologia.comercial.produto.dto.ProductOutputDTO;
+import com.c9tecnologia.comercial.produto.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

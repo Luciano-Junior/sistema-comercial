@@ -1,8 +1,8 @@
-package com.c9tecnologia.product.service;
+package com.c9tecnologia.comercial.produto.service;
 
-import com.c9tecnologia.product.dto.ProductOutputDTO;
-import com.c9tecnologia.product.model.Product;
-import com.c9tecnologia.product.repository.ProductRepository;
+import com.c9tecnologia.comercial.produto.dto.ProductOutputDTO;
+import com.c9tecnologia.comercial.produto.model.Product;
+import com.c9tecnologia.comercial.produto.repository.ProductRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
