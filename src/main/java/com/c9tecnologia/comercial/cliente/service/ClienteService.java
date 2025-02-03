@@ -1,8 +1,8 @@
 package com.c9tecnologia.comercial.cliente.service;
 
-import com.c9tecnologia.cliente.dto.ClienteInputDTO;
-import com.c9tecnologia.cliente.model.Cliente;
-import com.c9tecnologia.cliente.repository.ClienteRepository;
+import com.c9tecnologia.comercial.cliente.dto.ClienteInputDTO;
+import com.c9tecnologia.comercial.cliente.model.Cliente;
+import com.c9tecnologia.comercial.cliente.repository.ClienteRepository;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

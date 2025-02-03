@@ -1,8 +1,8 @@
 package com.c9tecnologia.comercial.cliente.controller;
 
-import com.c9tecnologia.cliente.dto.ClienteInputDTO;
-import com.c9tecnologia.cliente.model.Cliente;
-import com.c9tecnologia.cliente.service.ClienteService;
+import com.c9tecnologia.comercial.cliente.dto.ClienteInputDTO;
+import com.c9tecnologia.comercial.cliente.model.Cliente;
+import com.c9tecnologia.comercial.cliente.service.ClienteService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
