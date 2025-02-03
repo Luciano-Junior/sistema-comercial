@@ -1,4 +1,4 @@
 package com.c9tecnologia.comercial.produto.dto;
 
-public class ProductOutputDTO {
+public class ProdutoOutputDTO {
 }
