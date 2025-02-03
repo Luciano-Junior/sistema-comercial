@@ -1,6 +1,6 @@
 package com.c9tecnologia.comercial.cliente.dto;
 
-import com.c9tecnologia.cliente.validations.CnpjCpf;
+import com.c9tecnologia.comercial.cliente.validations.CnpjCpf;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

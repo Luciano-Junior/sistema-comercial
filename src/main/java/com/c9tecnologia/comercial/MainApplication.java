@@ -1,4 +1,4 @@
-package com.c9tecnologia.app;
+package com.c9tecnologia.comercial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
