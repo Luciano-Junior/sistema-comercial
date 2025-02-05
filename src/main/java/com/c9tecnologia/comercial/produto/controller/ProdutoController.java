@@ -1,11 +1,11 @@
 package com.c9tecnologia.comercial.produto.controller;
 
+import com.c9tecnologia.comercial.produto.dto.ProdutoInputDTO;
 import com.c9tecnologia.comercial.produto.dto.ProdutoOutputDTO;
 import com.c9tecnologia.comercial.produto.service.ProdutoService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,9 +19,17 @@ public class ProdutoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProdutoOutputDTO>> getAllProdutos(){
-        List<ProdutoOutputDTO> products = produtoService.getAllProdutos();
+    public ResponseEntity<List<ProdutoOutputDTO>> listarTodosProdutos(){
+        List<ProdutoOutputDTO> products = produtoService.listarTodosProdutos();
         return ResponseEntity.ok(products);
     }
+
+    @PostMapping
+    public ResponseEntity<ProdutoOutputDTO> criarProduto(@Valid @RequestBody ProdutoInputDTO produto){
+        ProdutoOutputDTO produtoCriado = produtoService.criarProduto(produto);
+        return ResponseEntity.ok(produtoCriado);
+    }
+
+
 
 }
