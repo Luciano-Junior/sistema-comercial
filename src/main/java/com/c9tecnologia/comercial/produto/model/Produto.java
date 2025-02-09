@@ -1,9 +1,11 @@
 package com.c9tecnologia.comercial.produto.model;
 
+import com.c9tecnologia.comercial.unidade_medida.model.UnidadeMedida;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -19,7 +21,7 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Integer categoria_id;
 
     @Column(nullable = false, length = 30)
@@ -29,10 +31,10 @@ public class Produto {
     private String descricao;
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private Double preco_custo;
+    private BigDecimal preco_custo;
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private Double preco_venda;
+    private BigDecimal preco_venda;
 
     @Column(unique = true, nullable = true, length = 50)
     private String codigo_barras;
@@ -41,7 +43,9 @@ public class Produto {
 
     private Integer estoque_minimo;
 
-    private Integer unidade_medida_id;
+    @ManyToOne
+    @JoinColumn(name = "unidade_medida_id", nullable = false)
+    private UnidadeMedida unidadeMedida;
 
     @Column(nullable = true, length = 100)
     private String fabricante;
